@@ -31,6 +31,7 @@ body{
   --tab-outline-color: var(--primary-color);
   --divider-color: var(--primary-color);
   --text-highlight-bg:var(--primary-light);
+  --checkbox-marker-color:var(--secondary-color);
 }
 
 
