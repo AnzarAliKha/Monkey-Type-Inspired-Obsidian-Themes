@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-handwritten: 'Space Mono', 'JetBrains Mono', monospace;
+
+  --font-default: var(--font-handwritten);
+  --font-interface: var(--font-handwritten);
+  --font-monospace: var(--font-handwritten);
+
+  --primary-color: #62cfe6;
+  --primary-light: #62cfe61a;
+  --secondary-color: #212b43;
+  --secondary-light: #212b431a;
+}
+*, *::before, *::after {
+  font-family: var(--font-handwritten) !important;
+}
+.theme-light {
+  --accent-h: 190;   
+  --accent-s: 73%;
+  --accent-l: 64%;
+}
+.theme-dark {
+  --accent-h: 136;   
+  --accent-s: 43%;
+  --accent-l: 51%;
+}
+body{
+  --icon-color: var(--primary-color);
+  --tab-outline-color: var(--primary-color);
+  --divider-color: var(--primary-color);
+  --text-highlight-bg:var(--primary-light);
+  --checkbox-marker-color:var(--secondary-color);
+}
+
+
