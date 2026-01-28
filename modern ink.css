@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
@@ -11,65 +12,25 @@
   --primary-light: #fd00404d;
   --secondary-color: #000000;
   --secondary-light: #0000001a;
-  --background-color: #FFFFFF;
 }
-
-/* Global Font Force */
 *, *::before, *::after {
   font-family: var(--font-handwritten) !important;
 }
-
-body {
-  
-  /* Background Overrides */
-  --background-primary: var(--background-color) !important;
-  --background-primary-alt: var(--background-color) !important;
-  --background-secondary: var(--background-color) !important;
-  --background-secondary-alt: var(--background-color) !important;
-  --titlebar-background: var(--background-color) !important;
-  --titlebar-background-focused: var(--background-color) !important;
-  --ribbon-background: var(--background-color) !important;
-  --status-bar-background: var(--background-color) !important;
-  --tab-container-background: var(--background-color) !important;
-  --tab-background-active: var(--background-color) !important;
-  
-  /* Color Accents */
-  --icon-color: var(--primary-color);
-  --vault-profile-color: var(--primary-color);
-  --divider-color: var(--primary-color); 
-
-  /* FONT COLOR OVERRIDES */
-  --text-normal: var(--secondary-color) !important;
-  --text-muted: var(--secondary-color) !important;
-  --text-faint: var(--secondary-color) !important;
-  --text-title-h1: var(--secondary-color) !important;
-  --text-title-h2: var(--secondary-color) !important;
-  --text-title-h3: var(--secondary-color) !important;
-  --text-title-h4: var(--secondary-color) !important;
-  --heading-color: var(--secondary-color) !important;
-  --nav-item-color: var(--secondary-color) !important;
-  --nav-item-color-active: var(--secondary-color) !important;
-  --tag-color: var(--primary-color) !important;
-  --link-color-hover: var(--primary-color) !important;
-  --tag-color-hover: var(--primary-color) !important;
-  --tag-background:var(--primary-light) !important;
-  --link-unresolved-color:var(--primary-light);
-  --checkbox-marker-color: var(--secondary-color) !important;
-  --checkbox-color: var(--primary-color) !important;
-  --checkbox-color-hover: var(--primary-light) !important;
-  --link-color: var(--primary-color) !important;
-  --tag-background-hover: var(--primary-light) !important;
-  --link-unresolved-decoration-color: var(--primary-light) !important;
-  --link-external-color:var(--primary-color);
-  --link-external-color-hover: var(--primary-light);
-  --link-external-decoration:var(--primary-color);
-  --link-external-decoration-hover:var(--primary-light);
-  --text-highlight-bg:var(--secondary-light);
-  --list-marker-color-hover:var(--secondary-light);
-  --list-marker-color-collapsed:var(--secondary-color);
-  --dropdown-background:var(--primary-light);
-  --divider-color-hover:var(--primary-light);
-
-
+.theme-light {
+  --accent-h: 0;   
+  --accent-s: 100%;
+  --accent-l: 48%;
 }
+.theme-dark {
+  --accent-h: 0;   
+  --accent-s: 100%;
+  --accent-l: 48%;
+}
+body{
+  --icon-color: var(--primary-color);
+  --tab-outline-color: var(--primary-color);
+  --divider-color: var(--primary-color);
+  --text-highlight-bg:var(--primary-light);
+}
+
 
