@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-handwritten: 'Space Mono', 'JetBrains Mono', monospace;
+
+  --font-default: var(--font-handwritten);
+  --font-interface: var(--font-handwritten);
+  --font-monospace: var(--font-handwritten);
+
+}
+*, *::before, *::after {
+  font-family: var(--font-handwritten) !important;
+}
+.theme-light {
+  
+  --primary-color: #d64090;
+  --primary-light: #d640901a;
+  --secondary-color: black;
+  --secondary-light: #3b4a621a;
+  --text-color: #4045D6;
+
+  --accent-h: 328;   
+  --accent-s: 65%;
+  --accent-l: 55%;
+
+
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: var(--primary-color);
+  --divider-color: var(--primary-color);
+  --text-highlight-bg:var(--primary-light);
+  --checkbox-marker-color:var(--text-color);
+
+    --text-normal: var(--text-color) !important;
+    --text-muted: var(--text-color) !important;
+    --text-faint: var(--text-color) !important;
+    --text-accent: var(--text-color) !important;
+    --heading-color: var(--text-color) !important;
+
+  
+}
+.theme-dark {
+  --primary-color: #d64090;
+  --primary-light: #d640901a;
+  --secondary-color: black;
+  --secondary-light: #3b4a621a;
+  --text-color: #5ed5f3;
+
+  --accent-h: 328;   
+  --accent-s: 65%;
+  --accent-l: 55%;
+
+  --background-color: black;   
+  --background-primary: var(--background-color) !important;
+  --background-primary-alt: var(--background-color) !important;
+  --background-secondary: var(--background-color) !important;
+  --background-secondary-alt: var(--background-color) !important;
+  --titlebar-background: var(--background-color) !important;
+  --titlebar-background-focused: var(--background-color) !important;
+  --ribbon-background: var(--background-color) !important;
+  --status-bar-background: var(--background-color) !important;
+  --tab-container-background: var(--background-color) !important;
+  --tab-background-active: var(--background-color) !important;
+    --text-normal: var(--text-color) !important;
+    --text-muted: var(--text-color) !important;
+    --text-faint: var(--text-color) !important;
+    --text-accent: var(--text-color) !important;
+    --heading-color: var(--text-color) !important;
+  --icon-color: var(--primary-color);
+  --tab-outline-color: var(--primary-color);
+  --divider-color: var(--primary-color);
+  --text-highlight-bg:var(--primary-light);
+  --checkbox-marker-color:var(--secondary-color);
+}
+
+
+
+
