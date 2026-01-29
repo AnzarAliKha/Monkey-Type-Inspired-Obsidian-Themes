@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-handwritten: 'Space Mono', 'JetBrains Mono', monospace;
+
+  --font-default: var(--font-handwritten);
+  --font-interface: var(--font-handwritten);
+  --font-monospace: var(--font-handwritten);
+
+}
+*, *::before, *::after {
+  font-family: var(--font-handwritten) !important;
+}
+
+.theme-light {
+  --background-color: #F7FBFF;
+  --background-primary: var(--background-color) !important;
+  --background-primary-alt: var(--background-color) !important;
+  --background-secondary: var(--background-color) !important;
+  --background-secondary-alt: var(--background-color) !important;
+  --titlebar-background: var(--background-color) !important;
+  --titlebar-background-focused: var(--background-color) !important;
+  --ribbon-background: var(--background-color) !important;
+  --status-bar-background: var(--background-color) !important;
+  --tab-container-background: var(--background-color) !important;
+  --tab-background-active: var(--background-color) !important;
+
+  --primary-color: #1E88E5; /* clear, accessible blue */
+  --primary-light: #1E88E51A; /* 10% tint for highlights */
+  --secondary-color: #5E35B1; /* harmonious indigo accent */
+  --secondary-light: #5E35B11A;
+  --text-color: #0F172A; 
+
+  --accent-h: 216;
+  --accent-s: 70%;
+  --accent-l: 50%;
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: rgba(15,23,42,0.08);
+  --divider-color: rgba(15,23,42,0.08);
+  --text-highlight-bg: var(--primary-light);
+  --checkbox-marker-color: var(--background-color);
+
+  --text-normal: var(--text-color) !important;
+  --text-muted: rgba(15,23,42,0.7) !important;
+  --text-faint: rgba(15,23,42,0.5) !important;
+  --text-accent: var(--secondary-color) !important;
+  --heading-color: var(--text-color) !important;
+
+}
+.theme-dark {
+  --background-color: #071029; 
+  --background-primary: var(--background-color) !important;
+  --background-primary-alt: var(--background-color) !important;
+  --background-secondary: var(--background-color) !important;
+  --background-secondary-alt: var(--background-color) !important;
+  --titlebar-background: var(--background-color) !important;
+  --titlebar-background-focused: var(--background-color) !important;
+  --ribbon-background: var(--background-color) !important;
+  --status-bar-background: var(--background-color) !important;
+  --tab-container-background: var(--background-color) !important;
+  --tab-background-active: var(--background-color) !important;
+
+  --primary-color: #60A5FA; 
+  --primary-light: #60A5FA1A;
+  --secondary-color: #A78BFA; 
+  --secondary-light: #A78BFA1A;
+  --text-color: #E6F0FF; 
+
+  --accent-h: 220;
+  --accent-s: 65%;
+  --accent-l: 65%;
+
+  --text-normal: var(--text-color) !important;
+  --text-muted: rgba(230,240,255,0.85) !important;
+  --text-faint: rgba(230,240,255,0.65) !important;
+  --text-accent: var(--primary-color) !important;
+  --heading-color: var(--text-color) !important;
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: rgba(167,139,250,0.12);
+  --divider-color: rgba(167,139,250,0.08);
+  --text-highlight-bg: var(--secondary-light);
+  --checkbox-marker-color: var(--secondary-color);
+}
+
+
+
+
