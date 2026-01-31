@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-handwritten: 'Space Mono', 'JetBrains Mono', monospace;
+
+  --font-default: var(--font-handwritten);
+  --font-interface: var(--font-handwritten);
+  --font-monospace: var(--font-handwritten);
+}
+
+*, *::before, *::after {
+  font-family: var(--font-handwritten)  ;
+}
+
+/* ─────────────── LIGHT THEME ─────────────── */
+
+.theme-light {
+  --background-color: pink;
+  --background-primary: var(--background-color)  ;
+  --background-primary-alt: var(--background-color)  ;
+  --background-secondary: var(--background-color) ;
+  --background-secondary-alt: var(--background-color) ;
+  --titlebar-background: var(--background-color) ;
+  --titlebar-background-focused: var(--background-color)  ;
+  --ribbon-background: var(--background-color)  ;
+  --status-bar-background: var(--background-color)  ;
+  --tab-container-background: var(--background-color)  ;
+  --tab-background-active: var(--background-color)  ;
+
+  --primary-color: yellowgreen;
+  --primary-light: rgba(180,233,255,0.25);
+
+  --secondary-color: yellowgreen;
+  --secondary-light: rgba(224,178,189,0.25);
+
+  --text-color: #2A2A2A;
+
+  --accent-h: 200;
+  --accent-s: 80%;
+  --accent-l: 80%;
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: black;
+  --divider-color: black;
+  --text-highlight-bg: var(--secondary-light);
+  --checkbox-marker-color: var(--background-color);
+
+  --text-normal: var(--text-color)  ;
+  --text-muted: rgba(42,42,42,0.7)  ;
+  --text-faint: rgba(42,42,42,0.5)  ;
+  --text-accent: var(--secondary-color)  ;
+  --heading-color: var(--text-color)  ;
+}
+
+.theme-dark {
+  --background-color: #1C1A1E;
+  --background-primary: var(--background-color)  ;
+  --background-primary-alt: var(--background-color)  ;
+  --background-secondary: #2A2730;
+  --background-secondary-alt: #2A2730;
+  --titlebar-background: var(--background-color)  ;
+  --titlebar-background-focused: var(--background-color)  ;
+  --ribbon-background: var(--background-color)  ;
+  --status-bar-background: var(--background-color)  ;
+  --tab-container-background: var(--background-color)  ;
+  --tab-background-active: var(--background-color)  ;
+
+  --primary-color: #B4E9FF;
+  --primary-light: rgba(180,233,255,0.25);
+
+  --secondary-color: #E0B2BD;
+  --secondary-light: rgba(224,178,189,0.25);
+
+  --text-color: #FBF4B6;
+
+  --accent-h: 45;
+  --accent-s: 90%;
+  --accent-l: 85%;
+
+  --text-normal: var(--text-color)  ;
+  --text-muted: rgba(251,244,182,0.75)  ;
+  --text-faint: rgba(251,244,182,0.55)  ;
+  --text-accent: var(--primary-color)  ;
+  --heading-color: var(--text-color)  ;
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: rgba(224,178,189,0.15);
+  --divider-color: rgba(224,178,189,0.1);
+  --text-highlight-bg: var(--secondary-light);
+  --checkbox-marker-color: var(--secondary-color);
+}
