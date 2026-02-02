@@ -1,0 +1,40 @@
+/* Blur non-active lines, keep active and hovered lines clear — optimized for Obsidian (CodeMirror 6) */
+
+:root {
+  --bb-blur: 2px;
+  --bb-opacity: 0.88;
+}
+
+/* ==== Primary: target CM6 editor structure ==== */
+.cm-editor .cm-scroller .cm-line {
+  filter: blur(var(--bb-blur)) !important;
+  opacity: var(--bb-opacity) !important;
+  transition: filter .15s ease, opacity .15s ease;
+  will-change: filter, opacity;
+}
+
+/* Keep the active/hovered lines sharp. Cover multiple possible class names for compatibility. */
+.cm-editor .cm-scroller .cm-line.cm-activeLine,
+.cm-editor .cm-scroller .cm-line.is-active,
+.cm-editor .cm-scroller .cm-line.cm-active,
+.cm-editor .cm-scroller .cm-line:hover {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.cm-editor:focus .cm-scroller .cm-line { filter: blur(var(--bb-blur)) !important; }
+.cm-editor:focus .cm-scroller .cm-line.cm-activeLine,
+.cm-editor:focus .cm-scroller .cm-line:hover { filter: none !important; opacity: 1 !important; }
+
+.CodeMirror pre, .CodeMirror .CodeMirror-lines > div {
+  filter: blur(var(--bb-blur)) !important;
+  opacity: var(--bb-opacity) !important;
+  transition: filter .15s ease, opacity .15s ease;
+}
+.CodeMirror .CodeMirror-activeline, .CodeMirror .CodeMirror-activeline * {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+
+
